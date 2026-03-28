@@ -7,21 +7,22 @@
 
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#ff4da6">
-
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <canvas id="stars"></canvas>
 
 <div id="app">
 
+<!-- PAGE 1: LANDING -->
 <section class="page active" id="p1">
   <h1 class="title">✨ Welcome to Mini’s Universe ✨</h1>
+  <div id="balloon-container"></div>
   <button onclick="go(2)">Start Magic</button>
 </section>
 
+<!-- PAGE 2: CAKE & CANDLE -->
 <section class="page" id="p2">
   <h2>Make a Wish 🎂</h2>
   <div id="cake" onclick="sliceCake()">🎂</div>
@@ -29,26 +30,30 @@
   <button onclick="blow()">Blow Candle</button>
 
   <div class="slider">
-    <img src="assets/photo1.jpg">
-    <img src="assets/photo2.jpg">
-    <img src="assets/photo3.jpg">
+    <img src="Cake.jpg">
+    <img src="HappyBirthdayImage.png">
+    <img src="GiftBox.png">
   </div>
 
+  <audio id="bgmusic" src="music.mp3" autoplay loop></audio>
   <button onclick="go(3)">Next</button>
 </section>
 
+<!-- PAGE 3: FIREWORKS -->
 <section class="page" id="p3">
   <canvas id="fw"></canvas>
   <h1 class="msg">Happy Birthday Mini 💖</h1>
   <button onclick="go(4)">Next</button>
 </section>
 
+<!-- PAGE 4: GIFT -->
 <section class="page" id="p4">
   <div id="gift">🎁</div>
   <button id="yes" onclick="yes()">YES 💖</button>
   <button id="no" onclick="no()">NO 😜</button>
 </section>
 
+<!-- PAGE 5: MINI-GAME -->
 <section class="page" id="p5">
   <div id="game"></div>
   <div class="ui">
@@ -57,6 +62,7 @@
   </div>
 </section>
 
+<!-- FINAL MESSAGE -->
 <div id="final"></div>
 
 </div>
