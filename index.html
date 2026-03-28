@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini's Magic ✨</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff4da6">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="stars"></canvas>
+
+<div id="app">
+
+<section class="page active" id="p1">
+  <h1 class="title">✨ Welcome to Mini’s Universe ✨</h1>
+  <button onclick="go(2)">Start Magic</button>
+</section>
+
+<section class="page" id="p2">
+  <h2>Make a Wish 🎂</h2>
+  <div id="cake" onclick="sliceCake()">🎂</div>
+  <div id="flame">🔥</div>
+  <button onclick="blow()">Blow Candle</button>
+
+  <div class="slider">
+    <img src="assets/photo1.jpg">
+    <img src="assets/photo2.jpg">
+    <img src="assets/photo3.jpg">
+  </div>
+
+  <button onclick="go(3)">Next</button>
+</section>
+
+<section class="page" id="p3">
+  <canvas id="fw"></canvas>
+  <h1 class="msg">Happy Birthday Mini 💖</h1>
+  <button onclick="go(4)">Next</button>
+</section>
+
+<section class="page" id="p4">
+  <div id="gift">🎁</div>
+  <button id="yes" onclick="yes()">YES 💖</button>
+  <button id="no" onclick="no()">NO 😜</button>
+</section>
+
+<section class="page" id="p5">
+  <div id="game"></div>
+  <div class="ui">
+    Score: <span id="s">0</span> |
+    Time: <span id="t">20</span>
+  </div>
+</section>
+
+<div id="final"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+ navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>

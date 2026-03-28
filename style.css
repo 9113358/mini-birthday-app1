@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.page {
+  display: none;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.page.active {
+  display: block;
+}
+
+.title {
+  font-size: 2em;
+  text-shadow: 0 0 20px pink;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: pink;
+  font-size: 16px;
+}
+
+#cake {
+  font-size: 80px;
+  cursor: pointer;
+}
+
+#flame {
+  font-size: 30px;
+  animation: flicker 0.3s infinite;
+}
+
+@keyframes flicker {
+  50% { transform: scale(1.2); }
+}
+
+.msg {
+  animation: float 3s infinite;
+}
+
+@keyframes float {
+  50% { transform: translateY(-20px); }
+}
+
+#gift {
+  font-size: 80px;
+  cursor: pointer;
+}
+
+#final {
+  display: none;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
