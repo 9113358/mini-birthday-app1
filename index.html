@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manorama's Magic ✨</title>
+<title>Mini's Magic ✨</title>
 
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#ff4da6">
@@ -15,11 +15,12 @@
 
 <div id="app">
 
-<!-- PAGE 1: LANDING -->
+<!-- PAGE 1: LANDING WITH FIREWORKS & BALLOONS -->
 <section class="page active" id="p1">
-  <h1 class="title">✨ Welcome to Manorama’s Universe ✨</h1>
+  <canvas id="fw-bg"></canvas>
+  <h1 class="title">✨ Welcome to Mini’s Universe ✨</h1>
   <div id="balloon-container"></div>
-  <button onclick="go(2)">Start Magic</button>
+  <button onclick="go(2)" class="btn start-btn">Start Magic 🎉</button>
 </section>
 
 <!-- PAGE 2: CAKE & CANDLE -->
@@ -30,9 +31,9 @@
   <button onclick="blow()">Blow Candle</button>
 
   <div class="slider">
-    <img src="Cake.jpg">
-    <img src="HappyBirthdayImage.png">
-    <img src="GiftBox.png">
+    <img src="Cake.jpg" alt="Cake">
+    <img src="HappyBirthdayImage.png" alt="Mini">
+    <img src="GiftBox.png" alt="Gift">
   </div>
 
   <audio id="bgmusic" src="music.mp3" autoplay loop></audio>
@@ -42,7 +43,7 @@
 <!-- PAGE 3: FIREWORKS -->
 <section class="page" id="p3">
   <canvas id="fw"></canvas>
-  <h1 class="msg">Happy Birthday Manorama 💖</h1>
+  <h1 class="msg">Happy Birthday Mini 💖</h1>
   <button onclick="go(4)">Next</button>
 </section>
 
